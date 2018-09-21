@@ -1,0 +1,84 @@
+/* Couleur des textes dans le header  */
+.text-nav 
+{
+    color: white;
+    
+}
+.text-canvas
+{
+    color: black;
+}
+
+/* Le lien Github */
+#forkMe
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+/* Centrer sur la page le bloc pour la signature  */
+#cadre-canvas
+{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+canvas
+{
+    border: 1px solid black;
+    height: 300px;
+    width: 500px;
+    
+}
+#saveSignature
+{
+    border: 1px solid black;
+    height: 150px;
+    width: 250px;
+    position: relative;
+    left: 0;
+    top: 10px;
+    margin: auto;
+}
+#cadre-image-signature
+{
+    position: relative;
+    top: 15px;
+    visibility: hidden;
+}
+
+#asterix
+{
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+/* Redimensionnement pour les mobiles  */
+@media screen and (max-width: 600px)
+{
+    
+    #cadre-canvas
+    {
+        top: 60%;        
+    }
+    #signatureCanvas
+    {
+        width: 480px;
+    }
+    #asterix
+    {
+        position: relative;
+        text-align: center;
+    }
+    #cadre-image-signature
+    {
+        display: none;
+    }
+    
+}
