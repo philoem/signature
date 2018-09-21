@@ -41,7 +41,7 @@ function signatureCapture() {
 	}
 
 	// Créer un interval régulier pour dessiner et la méthode requestAnimationFrame est plus rapide et consomme moins de batterie pour les tactiles 
-	window.requestAnimFrame = (function (callback) {
+	window.requestAnimationFrame = (function (callback) {
 	    return window.requestAnimationFrame || 
 	    function (callback) {
 			window.setTimeout(callback, 1000/60);
